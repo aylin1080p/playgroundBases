@@ -48,6 +48,8 @@ var sayilar:[Int] = [0,2,4,6, 7, 8]
 var sonuc = sayilar.filter({ $0 >= 7 })
 print(sonuc)
 
+
+
 var sonuc2 = sayilar.filter({ $0 < 7})
 print(sonuc2)
  
@@ -56,3 +58,6 @@ print(sonuc3)
 
 var sonuc4 = sayilar.filter({ $0 > 2 || $0 < 7})
 print(sonuc4)
+
+var sonuc5 = sayilar.count
+print(sonuc5)
