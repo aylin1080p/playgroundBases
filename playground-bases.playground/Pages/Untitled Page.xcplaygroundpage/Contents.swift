@@ -67,15 +67,15 @@ print(sonuc5)
 //average calculation
 
 var notes:[Int] = [88,93,87,45,23,34,73,76]
-var toplam = 0
+var ttoplam = 0
 for i in notes{
     
-    toplam = toplam + i
+    ttoplam = ttoplam + i
     
 }
-print("toplam:\(toplam)")
+print("toplam:\(ttoplam)")
 
-var ortalama = toplam / (notes.count)
+var ortalama = ttoplam / (notes.count)
 print(" average calculation:\(ortalama)")
 
 //content replacement
