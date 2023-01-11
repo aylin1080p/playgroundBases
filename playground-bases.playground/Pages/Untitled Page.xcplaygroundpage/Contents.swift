@@ -1,6 +1,7 @@
  import UIKit
 
-var a:Int32 = 50
+
+ var a:Int32 = 50
 if a < 70 {
     print("evet")
 }
@@ -138,5 +139,57 @@ for _ in 1...10{ // 10 kere çalış diyor döngüde
     
     
 }
+
+
+
+var karisikSayilar = [Int]() // boş bir dizi tanımladık int tutuyor
+// boş diziyi 10 döngülük bi for'a sok ve random sayılar üretip diziye yazdır
+
+for _ in 1...10{
+    karisikSayilar.append(Int(arc4random_uniform(10)))
+}
+karisikSayilar.sort()
+print(karisikSayilar)
+
+
+ 
+// integer dönüşümü yapmadan random sayı üretmek için
+
+let randomSayi = Int.random(in: 0...9) // bir adet random değer üretecektir
+print(randomSayi)
+
+ 
+
+
+// karne uygulaması
+
+var notlar = [Int]()
+var dersler = [String]()
+
+dersler.append("Tarih")
+notlar.append(20)
+
+dersler.append("MAT")
+notlar.append(40)
+
+dersler.append("BİO")
+notlar.append(45)
+
+dersler.append("Coğrafya")
+notlar.append(80)
+
+// iki dizi tek döngü: indexleriyle verileri alacağın
+
+var toplam = 0
+
+for i in 0...(notlar.count-1)
+{
+    print("Ders: \(dersler[i]) Not: \(notlar[i])")
+    
+    toplam = toplam + notlar[i]
+}
+print("notlar ortalaması : \((toplam)/(notlar.count))")
+
+
 
 
