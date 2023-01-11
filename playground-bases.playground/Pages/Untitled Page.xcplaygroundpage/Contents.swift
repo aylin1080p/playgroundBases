@@ -192,4 +192,26 @@ print("notlar ortalaması : \((toplam)/(notlar.count))")
 
 
 
+// key - value searching
+
+
+// dizideki değer(string ) var mı yok mu onu ara
+
+var isimler1:[String] = ["ali", "ayşe","fatma", "mehmet","aylin"]
+
+var controlName = "aylin"
+
+print(isimler1)
+
+for i in isimler1{
+    if (i == controlName){
+        print("dizide \(controlName) var")
+        break
+    }else{
+        continue
+    }
+    
+}
+
+
 
